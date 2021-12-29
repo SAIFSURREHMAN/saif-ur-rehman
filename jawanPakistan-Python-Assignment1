@@ -1,0 +1,67 @@
+"""1. Write a Python program to print the following string in a specific format (see the
+output).
+
+Twinkle, twinkle, little star,
+How I wonder what you are!
+Up above the world so high,
+Like a diamond in the sky.
+
+Twinkle, twinkle, little star,
+How I wonder what you are"""
+
+
+print("Twinkle,twinkle,little star,\n \t How I wonder what you are!\n\t\t Up above the world so high,\n\t\t Like a diamond in the sky.\n Twinkle,twinkle, little star,\n\t How I wonder what you are ")
+Twinkle,twinkle,little star,
+ 	 How I wonder what you are!
+		 Up above the world so high,
+		 Like a diamond in the sky.
+ Twinkle,twinkle, little star,
+	 How I wonder what you are 
+"""2. Write a Python program to get the Python version you are using"""
+import sys
+print("Python version")
+print (sys.version)
+print("Version info.")
+print (sys.version_info)
+
+Python version
+3.6.13 | packaged by conda-forge | (default, Sep 23 2021, 07:56:31) 
+[GCC 9.4.0]
+Version info.
+sys.version_info(major=3, minor=6, micro=13, releaselevel='final', serial=0)
+"3.Write a Python program to display the current date and time."
+from datetime import date 
+import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+Current date and time : 
+2021-12-29 16:19:20
+"""4.Write a Python program which accepts the radius of a circle from the user and compute
+the area."""
+radius= int(input("Enter the radius of circle"))
+area = 3.14159265359*radius**2
+print("Area of circle is", area)
+Enter the radius of circle7
+Circle of Area is 153.93804002591
+"""5.Write a Python program which accepts the user's first and last name and print them in
+reverse order with a space between them."""
+fname = input("Input your First Name : ")
+lname = input("Input your Last Name : ")
+reverse = (fname + " " + lname)
+print (reverse)
+print("Reverse order",reverse[::- 1 ])
+
+Input your First Name : Saif
+Input your Last Name : Rehman
+Saif Rehman
+Reverse order namheR fiaS
+"""6.Write a python program which takes two inputs from user and print them addition"""
+a = int(input("Enter the first number "))
+b = int(input("Enter the second number "))
+sum = a+b;
+print("Sum of two number is ",sum)
+Enter the first number12
+Enter the second number21
+Sum of two number is  33
